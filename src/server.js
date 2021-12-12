@@ -19,6 +19,6 @@ app.get('/', (req, res) => {
   res.send('<a href="http://localhost:3000/">Click here to go to the HELLO WORLD page</a>');
 });
   
-const PORT =  8000;
+const PORT =  process.env.PORT || 8000;
   
 app.listen(PORT, console.log(`Server started on port ${PORT}`));
